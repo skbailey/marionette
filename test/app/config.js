@@ -55,6 +55,4 @@ require(["jquery", "jasmine-html", "spec/SpecHelper"], function($, jasmine){
       jasmineEnv.execute();
     });
   });
-
-  console.log("Kick off requirejs");
 });
