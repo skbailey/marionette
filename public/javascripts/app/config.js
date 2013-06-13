@@ -1,9 +1,9 @@
 require.config({
   paths: {
-    jquery: "../lib/jquery",
-    underscore: "../lib/underscore",
-    backbone: "../lib/backbone",
-    marionette: "../lib/marionette"
+    jquery: "/javascripts/lib/jquery",
+    underscore: "/javascripts/lib/underscore",
+    backbone: "/javascripts/lib/backbone",
+    marionette: "/javascripts/lib/marionette"
   },
   shim: {
     jquery: {
