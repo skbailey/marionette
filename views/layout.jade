@@ -4,9 +4,16 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div#container
+      block content
     
     footer
       | Sample footer content
 
     script(src="/javascripts/lib/require.js", data-main="/javascripts/app/config")
+
+    // Layouts
+    script(id="main-layout", type="text/template")
+      section
+        nav(id="menu")
+        article(id="content")

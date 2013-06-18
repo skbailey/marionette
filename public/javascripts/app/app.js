@@ -1,4 +1,8 @@
-define(["marionette", "main_router"], function(Marionette, MainRouter){
+define([
+  "marionette", 
+  "main_router", 
+  "views/main_layout"
+  ], function(Marionette, MainRouter, MainLayout){
   var App = new Marionette.Application();
   App.mainRouter = new MainRouter();
 
@@ -27,6 +31,11 @@ define(["marionette", "main_router"], function(Marionette, MainRouter){
   App.on("start", function(options){
     console.log("The app has started", options, this);
     App.vent.trigger("huzzah");
+    App.container.show(new MainLayout);
+  });
+
+  App.addRegions({
+    container: "#container"
   });
 
   return App;
