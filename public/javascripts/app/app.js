@@ -4,6 +4,7 @@ define([
   "views/main_layout"
   ], function(Marionette, MainRouter, MainLayout){
   var App = new Marionette.Application();
+  // Create a routers object and attach all routers to that for easier management
   App.mainRouter = new MainRouter();
 
   // Add an initializer
