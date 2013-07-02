@@ -1,3 +1,11 @@
+/* Generic Styles */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* Header Styles */
 
 header {
@@ -44,7 +52,7 @@ nav .segment-navigation .earlier {
 nav .segment-navigation > span {
   background-color: #666;
   float: left;
-  width: 37px;
+  width: 50px;
   height: 100%;
 }
 
