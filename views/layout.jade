@@ -1,8 +1,9 @@
 doctype 5
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title MainApp Proof of Concept
+    link(rel='stylesheet', href='/styles/bootstrap.css')
+    link(rel='stylesheet', href='/styles/bootstrap-responsive.css')
   body
     block content
     div#container
@@ -10,7 +11,7 @@ html
     footer
       | Sample footer content
 
-    script(src="/javascripts/lib/require.js", data-main="/javascripts/app/config")
+    script(src="/scripts/lib/require.js", data-main="/scripts/js/config")
 
     // Templates
     script(id="main-layout", type="text/template")
