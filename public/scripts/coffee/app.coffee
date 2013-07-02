@@ -30,7 +30,7 @@ define [
   App.on "start", (options) ->
     console.log("The app has started", options, this)
     App.vent.trigger("huzzah")
-    App.container.show(new MainLayout)
+    #App.container.show(new MainLayout)
 
   App.addRegions container: "#container"
 

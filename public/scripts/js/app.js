@@ -23,8 +23,7 @@
     });
     App.on("start", function(options) {
       console.log("The app has started", options, this);
-      App.vent.trigger("huzzah");
-      return App.container.show(new MainLayout);
+      return App.vent.trigger("huzzah");
     });
     App.addRegions({
       container: "#container"

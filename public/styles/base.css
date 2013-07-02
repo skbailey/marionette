@@ -1,0 +1,21 @@
+body {
+  padding: 15px;
+}
+
+h1 {
+  float: left;
+}
+
+#engage {
+  float: right;
+}
+
+#engage a {
+  float: right;
+  display: block;
+  padding-left: 25px;
+}
+
+#engage .search {
+  margin-top: 10px;
+}

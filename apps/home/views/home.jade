@@ -1,5 +1,14 @@
-extends ../../../views/layout
+extends ../../../layouts/main
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1 HuffPost Live
+    #engage
+      .login
+        a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
+        a(class="login") Log In
+      .search
+        input(class="search", type="text", placeholder="Search")
+  #main
+
+  footer

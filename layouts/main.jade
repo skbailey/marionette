@@ -4,12 +4,20 @@ html
     title MainApp Proof of Concept
     link(rel='stylesheet', href='/styles/bootstrap.css')
     link(rel='stylesheet', href='/styles/bootstrap-responsive.css')
+    link(rel='stylesheet', href='/styles/base.css')
   body
-    block content
     div#container
-    
-    footer
-      | Sample footer content
+      header
+        h1 HuffPost Live
+        #engage
+          .login
+            a(class="login") Log In
+            a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
+          .search
+            input(class="search", type="text", placeholder="Search")
+      #main
+
+      footer
 
     script(src="/scripts/lib/require.js", data-main="/scripts/js/config")
 
