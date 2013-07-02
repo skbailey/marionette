@@ -1,21 +1,74 @@
-body {
-  padding: 15px;
+/* Header Styles */
+
+header {
+  overflow: hidden;
 }
 
-h1 {
+header h1 {
   float: left;
 }
 
-#engage {
+header #engage {
   float: right;
 }
 
-#engage a {
+header #engage a {
   float: right;
   display: block;
   padding-left: 25px;
+  margin-top: 5px;
 }
 
-#engage .search {
+header #engage .search {
   margin-top: 10px;
 }
+
+/* Nav Styles */
+
+nav {
+  height: 64px;
+}
+
+nav .segment-navigation {
+  height: 100%;
+}
+
+nav .segment-navigation .earlier {
+  background-color: #666;
+  float: left;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+
+nav .segment-navigation > span {
+  background-color: #666;
+  float: left;
+  width: 37px;
+  height: 100%;
+}
+
+nav .segment-navigation .segment {
+  background-color: #aaa;
+  float: left;
+  width: 346px;
+  padding: 2px;
+}
+
+nav .segment-navigation .segments {
+  float: left;
+  width: 700px;
+}
+
+nav .segment-navigation .segment img {
+  float: left;
+  display: block;
+  width: 150px;
+  height: 60px;
+}
+
+nav .segment-navigation .segment .meta {
+  width: 150px;
+  padding-left: 160px
+}
+

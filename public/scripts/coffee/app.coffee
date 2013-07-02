@@ -1,8 +1,8 @@
 define [
   "marionette", 
   "main_router", 
-  "views/main_layout"
-  ], (Marionette, MainRouter, MainLayout) ->
+  "views/nav"
+  ], (Marionette, MainRouter, NavView) ->
 
   App = new Marionette.Application()
 
@@ -30,8 +30,11 @@ define [
   App.on "start", (options) ->
     console.log("The app has started", options, this)
     App.vent.trigger("huzzah")
-    #App.container.show(new MainLayout)
+    App.nav.show(new NavView)
 
-  App.addRegions container: "#container"
+  App.addRegions 
+    nav: "#segments"
+    display: "#display"
+    comments: "#comments"
 
   App

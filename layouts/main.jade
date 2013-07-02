@@ -6,8 +6,8 @@ html
     link(rel='stylesheet', href='/styles/bootstrap-responsive.css')
     link(rel='stylesheet', href='/styles/base.css')
   body
-    div#container
-      header
+    div.container
+      header.row
         h1 HuffPost Live
         #engage
           .login
@@ -15,13 +15,28 @@ html
             a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
           .search
             input(class="search", type="text", placeholder="Search")
-      #main
+      #main.row
+        nav#segments
+        section#content
+          #display
+          #comments
 
-      footer
+      footer.row
 
     script(src="/scripts/lib/require.js", data-main="/scripts/js/config")
 
     // Templates
+    script(id="nav-layout", type="text/template")
+      .earlier
+      .segment
+        img(src="http://placehold.it/150x60", alt="")
+        div.meta
+          .state Live
+          .title Lorem ipsum dolor sit amet
+      span.left
+      ul.segments
+      span.right
+    script(id="segment-layout", type="text/template")
     script(id="main-layout", type="text/template")
       section
         nav(id="menu")
