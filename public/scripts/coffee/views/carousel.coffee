@@ -12,6 +12,8 @@ define [
 
       events:
         "click .segment" : "onSegmentClick"
+        "click .prev" : "previous"
+        "click .next" : "next"
 
       ui:
         rundown: ".segments"
@@ -23,6 +25,7 @@ define [
       initialize: (options) ->
         @collection.fetch()
 
+      # Event Handlers
       onSegmentAdded: ->
         @ui.rundown.width (idx, oldWidth) ->
           oldWidth += 350
@@ -33,3 +36,11 @@ define [
       onSegmentClick: (evt) ->
         index = @ui.rundown.find('li').index(evt.currentTarget)
         window.HPLive.app.vent.trigger "rundown:select", @collection, index
+
+      # Carousel Interactions
+      previous: (evt) ->
+        @ui.rundown.css "left", "+=350"
+
+      next: (evt) ->
+        console.log "next"
+        @ui.rundown.css "left", "-=350"

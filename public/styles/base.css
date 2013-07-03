@@ -105,9 +105,12 @@ nav .segment-navigation .nav-carousel .carousel .display {
   float: left;
   width: 700px;
   overflow: hidden;
+  position: relative;
 }
 
 nav .segment-navigation .nav-carousel .carousel .display .segments {
   float: left;
+  position: relative;
+  left: 0;
 }
 
