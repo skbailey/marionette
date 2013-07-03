@@ -5,4 +5,5 @@ define [
 
   class Segments extends Backbone.Collection
 
+    url: '/static/segments.json'
     model: SegmentModel

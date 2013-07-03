@@ -90,11 +90,6 @@ nav .segment-navigation .nav-carousel .carousel {
   margin-bottom: 0;
 }
 
-nav .segment-navigation .nav-carousel .carousel .segments {
-  float: left;
-  width: 700px;
-}
-
 nav .segment-navigation .nav-carousel .carousel > span {
   background-color: #666;
   display: block;
@@ -102,5 +97,15 @@ nav .segment-navigation .nav-carousel .carousel > span {
   width: 50px;
   height: 100%;
   cursor: pointer;
+}
+
+nav .segment-navigation .nav-carousel .carousel .display {
+  float: left;
+  width: 700px;
+  overflow: hidden;
+}
+
+nav .segment-navigation .nav-carousel .carousel .display .segments {
+  float: left;
 }
 
