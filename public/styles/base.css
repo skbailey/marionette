@@ -41,31 +41,11 @@ nav .segment-navigation {
   height: 100%;
 }
 
-nav .segment-navigation .earlier {
-  background-color: #666;
-  float: left;
-  width: 50px;
-  height: 100%;
-  cursor: pointer;
-}
-
-nav .segment-navigation > span {
-  background-color: #666;
-  float: left;
-  width: 50px;
-  height: 100%;
-}
-
 nav .segment-navigation .segment {
   background-color: #aaa;
   float: left;
   width: 346px;
   padding: 2px;
-}
-
-nav .segment-navigation .segments {
-  float: left;
-  width: 700px;
 }
 
 nav .segment-navigation .segment img {
@@ -78,5 +58,49 @@ nav .segment-navigation .segment img {
 nav .segment-navigation .segment .meta {
   width: 150px;
   padding-left: 160px
+}
+
+nav .segment-navigation .earlier {
+  background-color: #666;
+  float: left;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+
+nav .segment-navigation .nav-spotlight {
+  float: left;
+  width: 350px;
+  height: 100%;
+  overflow: hidden;
+}
+
+nav .segment-navigation .nav-carousel {
+  float: left;
+  width: 800px;
+  height: 100%;
+  overflow: hidden;
+}
+
+nav .segment-navigation .nav-carousel .carousel {
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+nav .segment-navigation .nav-carousel .carousel .segments {
+  float: left;
+  width: 700px;
+}
+
+nav .segment-navigation .nav-carousel .carousel > span {
+  background-color: #666;
+  display: block;
+  float: left;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
 }
 

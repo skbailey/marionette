@@ -28,11 +28,14 @@ html
     // Templates
     script(id="nav-layout", type="text/template")
       .earlier
-      .segment
-        img(src="http://placehold.it/150x60", alt="")
-        div.meta
-          .state Live
-          .title Lorem ipsum dolor sit amet
+      .nav-spotlight
+      .nav-carousel
+    script(id="segment-layout", type="text/template")
+      img(src="http://placehold.it/150x60", alt="")
+      div.meta
+        .state Live
+        .title Lorem ipsum dolor sit
+    script(id="carousel-layout", type="text/template")
       span.left
       ul.segments
         li.segment
@@ -46,7 +49,6 @@ html
             .state Live
             .title Lorem ipsum dolor sit amet
       span.right
-    script(id="segment-layout", type="text/template")
     script(id="main-layout", type="text/template")
       section
         nav(id="menu")
