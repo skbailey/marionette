@@ -1,8 +1,9 @@
 define [
   "marionette", 
   "main_router", 
-  "views/nav"
-  ], (Marionette, MainRouter, NavView) ->
+  "views/nav",
+  "views/main"
+  ], (Marionette, MainRouter, NavView, MainView) ->
 
   App = new Marionette.Application()
 
@@ -14,8 +15,9 @@ define [
     console.log("App is initializing", options, this)
 
     # Every application instance comes with a vent
-    App.vent.on 'huzzah', ->
+    App.vent.on "rundown:set", (collection) ->
       console.log("Huzzah!")
+      App.content.show new MainView
 
   # Event is triggered before the initializers are run
   App.on "initialize:before", (options) ->
@@ -34,8 +36,8 @@ define [
 
   App.addRegions 
     nav: "#segments"
-    display: "#display"
-    comments: "#comments"
+    content: "#content"
+    footer: "#footer"
 
   window.HPLive = app: App
   App
