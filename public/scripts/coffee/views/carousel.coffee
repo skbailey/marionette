@@ -42,5 +42,4 @@ define [
         @ui.rundown.css "left", "+=350"
 
       next: (evt) ->
-        console.log "next"
         @ui.rundown.css "left", "-=350"

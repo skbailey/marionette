@@ -16,8 +16,7 @@ define [
 
     # Every application instance comes with a vent
     App.vent.on "rundown:set", (collection) ->
-      console.log("Huzzah!")
-      App.content.show new MainView
+      console.log "Huzzah!", collection
 
   # Event is triggered before the initializers are run
   App.on "initialize:before", (options) ->
@@ -32,7 +31,8 @@ define [
   App.on "start", (options) ->
     console.log("The app has started", options, this)
     App.vent.trigger("huzzah")
-    App.nav.show(new NavView)
+    App.nav.show new NavView
+    App.content.show new MainView
 
   App.addRegions 
     nav: "#segments"

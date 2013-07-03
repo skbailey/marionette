@@ -16,7 +16,7 @@ html
               a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
             .search
               input(class="search", type="text", placeholder="Search")
-              
+
       #main.row
         nav#segments.span12
         section#content.span12
@@ -42,19 +42,21 @@ html
       .display
         ul.segments
       span.next &gt;
+    script(id="display-layout", type="text/template")
+      .video
+        img(src="http://placehold.it/400x300")
+      .meta
+        h2 
+          | <%= title %>
+      .resources
+        ul
+          li Here a link to a related story
+          li Look at that another one
+          li One more
+          li Okay, I lied.  One last story.
+          li :)
     script(id="main-layout", type="text/template")
       #display.span6
-        .video
-          img(src="http://placehold.it/400x300")
-        .meta
-          h2 It was the best of times
-        .resources
-          ul
-            li Here a link to a related story
-            li Look at that another one
-            li One more
-            li Okay, I lied.  One last story.
-            li :)
       #comments.span6
         .meta
         .post-comment

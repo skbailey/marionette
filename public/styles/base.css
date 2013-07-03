@@ -120,6 +120,10 @@ nav .segment-navigation .nav-carousel .carousel .display .segments {
   padding-top: 10px;
 }
 
+#content #display .video {
+  height: 427px;
+}
+
 #content #display .video img {
   width: 100%;
 }
