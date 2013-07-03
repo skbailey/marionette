@@ -11,7 +11,11 @@ define [
         spotlight: ".nav-spotlight"
         carousel: ".nav-carousel"
 
+      initialize: (options) ->
+        window.HPLive.app.vent.on "rundown:set", @onRundownSet, @
+
       onRender: ->
-        console.log "calling render"
-        #@spotlight.show new SegmentView
         @carousel.show new CarouselView collection: new SegmentsCollection
+
+      onRundownSet: (collection) ->
+        @spotlight.show new SegmentView model: collection.first()

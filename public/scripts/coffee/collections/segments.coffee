@@ -1,9 +1,10 @@
 define [
+  'api',
   'backbone',
   'models/segment'
-  ], (Backbone, SegmentModel) ->
+  ], (API, Backbone, SegmentModel) ->
 
   class Segments extends Backbone.Collection
 
-    url: '/static/segments.json'
+    url: API.rundown
     model: SegmentModel

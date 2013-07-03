@@ -1,3 +1,3 @@
 define
   # APIs
-  rundownAPI: '/static/rundown.json'
+  rundown: '/static/segments.json'

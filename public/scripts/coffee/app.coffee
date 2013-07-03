@@ -37,4 +37,5 @@ define [
     display: "#display"
     comments: "#comments"
 
+  window.HPLive = app: App
   App

@@ -24,5 +24,6 @@ define [
         @ui.rundown.width (idx, oldWidth) ->
           oldWidth += 350
 
-      onRundownSync: (event) ->
-        console.log "rundownSet", event
+      onRundownSync: ->
+        window.HPLive.app.vent.trigger "rundown:set", @collection
+        console.log "rundownSet", @collection
