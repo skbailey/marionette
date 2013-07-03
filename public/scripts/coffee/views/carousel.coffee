@@ -10,6 +10,9 @@ define [
       itemView: SegmentView
       itemViewContainer: ".segments"
 
+      events:
+        "click .segment" : "onSegmentClick"
+
       ui:
         rundown: ".segments"
 
@@ -26,3 +29,7 @@ define [
 
       onRundownSync: ->
         window.HPLive.app.vent.trigger "rundown:set", @collection
+
+      onSegmentClick: (evt) ->
+        index = @ui.rundown.find('li').index(evt.currentTarget)
+        window.HPLive.app.vent.trigger "rundown:select", @collection, index
