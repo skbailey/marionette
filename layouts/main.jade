@@ -33,16 +33,12 @@ html
     script(id="segment-layout", type="text/template")
       img(src="http://placehold.it/150x60", alt="")
       div.meta
-        .state Live
-        .title Lorem ipsum dolor sit
+        .state 
+          | <%= state %>
+        .title 
+          | <%= title %>
     script(id="carousel-layout", type="text/template")
       span.left
       .display
         ul.segments
       span.right
-    script(id="main-layout", type="text/template")
-      section
-        nav(id="menu")
-        article(id="content")
-    script(id="item-view", type="text/template")
-      | Who likes <%= name %>?
