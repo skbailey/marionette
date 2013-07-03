@@ -28,17 +28,17 @@ html
     // Templates
     script(id="nav-layout", type="text/template")
       .earlier
-      .nav-spotlight
+      ul.nav-spotlight
       .nav-carousel
     script(id="segment-layout", type="text/template")
-      img(src="http://placehold.it/150x60", alt="")
+      img(src!="<%= image %>", alt="")
       div.meta
         .state 
           | <%= state %>
         .title 
           | <%= title %>
     script(id="carousel-layout", type="text/template")
-      span.left
+      span.left &lt;
       .display
         ul.segments
-      span.right
+      span.right &gt;

@@ -5,6 +5,3 @@ define [
       className: 'segment view'
       tagName: "li"
       template: "#segment-layout"
-
-      onRender: ->
-        console.log "rendered", @model

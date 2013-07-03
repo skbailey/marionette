@@ -26,4 +26,3 @@ define [
 
       onRundownSync: ->
         window.HPLive.app.vent.trigger "rundown:set", @collection
-        console.log "rundownSet", @collection
