@@ -63,7 +63,7 @@ nav .segment-navigation .segment .meta {
 nav .segment-navigation .earlier {
   background-color: #666;
   float: left;
-  width: 50px;
+  width: 20px;
   height: 100%;
   cursor: pointer;
 }
@@ -112,5 +112,15 @@ nav .segment-navigation .nav-carousel .carousel .display .segments {
   float: left;
   position: relative;
   left: 0;
+}
+
+/* Main Styles */
+
+#content {
+  padding-top: 10px;
+}
+
+#content #display .video img {
+  width: 100%;
 }
 

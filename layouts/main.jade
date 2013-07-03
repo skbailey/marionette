@@ -8,18 +8,27 @@ html
   body
     div.container
       header.row
-        h1 HuffPost Live
-        #engage
-          .login
-            a(class="login") Log In
-            a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
-          .search
-            input(class="search", type="text", placeholder="Search")
+        .span12
+          h1 HuffPost Live
+          #engage
+            .login
+              a(class="login") Log In
+              a(class="main-site", href="www.huffingtonpost.com") HuffingtonPost.com
+            .search
+              input(class="search", type="text", placeholder="Search")
       #main.row
-        nav#segments
-        section#content
-          #display
-          #comments
+        nav#segments.span12
+        section#content.span12
+          .row
+            #display.span6
+              .video
+                img(src="http://placehold.it/400x300")
+              .meta
+              .resources
+            #comments.span6
+              .meta
+              .post-comment
+              .comments
 
       footer.row
 
