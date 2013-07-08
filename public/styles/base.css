@@ -144,3 +144,21 @@ nav .segment-navigation .nav-carousel .carousel .display .segments {
 #content .resources li i {
   padding-right: 5px;
 }
+
+/* Comment Styles */
+
+#comments .meta h3 {
+  text-transform: capitalize;
+}
+
+#comments .meta h3 i {
+  display: inline-block;
+  margin: 7px;
+}
+
+#comments .post-comment input {
+  margin: 0;
+  border-radius: 2px;
+  padding: 14px;
+  width: 85%;
+}

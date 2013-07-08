@@ -28,7 +28,13 @@ html
     // Templates
     script(id="comments-layout", type="text/template")
       .meta
+        h3 
+          i.icon-film
+          | Be an on-air guest
       .post-comment
+        .comment-box
+          img.avatar(src="http://placehold.it/50x50")
+          input(type="text", placeholder="Post a text or video comment")
       .comments
         ul
           li.comment
