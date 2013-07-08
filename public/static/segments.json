@@ -3,24 +3,28 @@
     "image": "http://placehold.it/150x60",
     "state": "Live",
     "title": "C'est le début du weekend",
-    "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt nisi vitae ante iaculis tempus. Phasellus in semper turpis. Proin rutrum orci at odio varius, id convallis metus tempor. Cras vel tempus velit, ut ultrices nisi. Donec egestas turpis eu orci convallis fringilla."
+    "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt nisi vitae ante iaculis tempus. Phasellus in semper turpis. Proin rutrum orci at odio varius, id convallis metus tempor. Cras vel tempus velit, ut ultrices nisi. Donec egestas turpis eu orci convallis fringilla.",
+    "user_comments": ["OMG, I can't beleive you said that!", "Good point!", "CAPS CAPS CAPS", "I love this segment, like fer' realz"]
   },
   {
     "image": "http://placehold.it/150x60",
     "state": "Live Again",
     "title": "Us and Them",
-    "overview": "Maecenas ac pulvinar felis, sit amet iaculis eros. Nullam a nisi ut velit sollicitudin laoreet eu nec mauris. Duis tortor ante, bibendum eget feugiat nec, aliquam in tortor. Ut nec ipsum eu magna placerat faucibus. Mauris sed urna at quam viverra pulvinar."
+    "overview": "Maecenas ac pulvinar felis, sit amet iaculis eros. Nullam a nisi ut velit sollicitudin laoreet eu nec mauris. Duis tortor ante, bibendum eget feugiat nec, aliquam in tortor. Ut nec ipsum eu magna placerat faucibus. Mauris sed urna at quam viverra pulvinar.",
+    "user_comments": ["My point is better than your point", "Obviously you don't know what you're talking about", "FLAME WAR!!!"]
   },
   {
     "image": "http://placehold.it/150x60",
     "state": "Live",
     "title": "Benghazi Trouble",
-    "overview": "Nulla malesuada rhoncus nisl sit amet tempor. Sed et velit sit amet ante consectetur eleifend ac quis quam. Maecenas consectetur, neque vitae auctor ultrices, arcu nunc mattis enim, sit amet adipiscing elit nibh at leo. In vitae dignissim sapien. Aenean porttitor vehicula justo sed lobortis."
+    "overview": "Nulla malesuada rhoncus nisl sit amet tempor. Sed et velit sit amet ante consectetur eleifend ac quis quam. Maecenas consectetur, neque vitae auctor ultrices, arcu nunc mattis enim, sit amet adipiscing elit nibh at leo. In vitae dignissim sapien. Aenean porttitor vehicula justo sed lobortis.",
+    "user_comments": ["Accidents happen...", "Tell me about it :(", "Don't worry too much", "I know right"]
   },
   {
     "image": "http://placehold.it/150x60",
     "state": "Live Again",
     "title": "European Debt Crisis",
-    "overview": "Curabitur laoreet aliquam urna, in faucibus felis viverra ac. Integer imperdiet nulla sed sem pretium cursus. Integer dignissim lacinia justo quis cursus. Fusce rhoncus lectus eget augue bibendum, eu facilisis orci placerat. Suspendisse sodales mauris at nibh porttitor, sit amet eleifend lorem consectetur."
+    "overview": "Curabitur laoreet aliquam urna, in faucibus felis viverra ac. Integer imperdiet nulla sed sem pretium cursus. Integer dignissim lacinia justo quis cursus. Fusce rhoncus lectus eget augue bibendum, eu facilisis orci placerat. Suspendisse sodales mauris at nibh porttitor, sit amet eleifend lorem consectetur.",
+    "user_comments": ["One lonely comment"]
   }
 ]

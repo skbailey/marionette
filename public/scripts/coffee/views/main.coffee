@@ -17,7 +17,8 @@ define [
 
       onRundownSet: (collection) ->
         @display.show new DisplayView model: collection.first()
-        @comments.show new CommentsView
+        @comments.show new CommentsView model: collection.first()
 
       onRundownSelect: (collection, target) ->
         @display.show new DisplayView model: collection.at(target)
+        @comments.show new CommentsView model: collection.at(target)

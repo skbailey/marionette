@@ -37,12 +37,12 @@ html
           input(type="text", placeholder="Post a text or video comment")
       .comments
         ul
+          <% console.log("usercomments", user_comments) %>
+          <% user_comments.forEach(function(comment){ %>
           li.comment
-            | I like this
-          li.comment
-            | Me not so much
-          li.comment
-            | Flame war!
+            img(src="http://placehold.it/50x50")
+            | <%= comment %>
+          <% }); %>
     script(id="nav-layout", type="text/template")
       .earlier
       ul.nav-spotlight
