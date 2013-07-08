@@ -59,13 +59,26 @@ html
       .meta
         h2 
           | <%= title %>
+        p
+          | <%= overview %>
       .resources
+        h3 Segment Information
         ul
-          li Here a link to a related story
-          li Look at that another one
-          li One more
-          li Okay, I lied.  One last story.
-          li :)
+          li 
+            i.icon-calendar 
+            | Here a link to a related story
+          li 
+            i.icon-time
+            | Look at that another one
+          li 
+            i.icon-plus
+            | One more
+          li 
+            i.icon-book
+            | Okay, I lied.  One last story.
+          li 
+            i.icon-envelope
+            | :)
     script(id="main-layout", type="text/template")
       #display.span6
       #comments.span6

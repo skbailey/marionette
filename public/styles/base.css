@@ -128,3 +128,19 @@ nav .segment-navigation .nav-carousel .carousel .display .segments {
   width: 100%;
 }
 
+#content .resources h3 {
+  font-size: 1.8em;
+}
+
+#content .resources li {
+  border-bottom: 1px solid #999;
+  padding: 5px 0;
+}
+
+#content .resources li:first-child {
+  border-top: 1px solid #999;
+}
+
+#content .resources li i {
+  padding-right: 5px;
+}
