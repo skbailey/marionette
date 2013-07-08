@@ -2,8 +2,9 @@ define [
   "marionette", 
   "main_router", 
   "views/nav",
-  "views/main"
-  ], (Marionette, MainRouter, NavView, MainView) ->
+  "views/main",
+  "views/footer"
+  ], (Marionette, MainRouter, NavView, MainView, FooterView) ->
 
   App = new Marionette.Application()
 
@@ -33,11 +34,12 @@ define [
     App.vent.trigger("huzzah")
     App.nav.show new NavView
     App.content.show new MainView
+    App.footer.show new FooterView
 
   App.addRegions 
     nav: "#segments"
     content: "#content"
-    footer: "#footer"
+    footer: "footer"
 
   window.HPLive = app: App
   App
