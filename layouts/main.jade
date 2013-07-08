@@ -26,6 +26,17 @@ html
     script(src="/scripts/lib/require.js", data-main="/scripts/js/config")
 
     // Templates
+    script(id="comments-layout", type="text/template")
+      .meta
+      .post-comment
+      .comments
+        ul
+          li.comment
+            | I like this
+          li.comment
+            | Me not so much
+          li.comment
+            | Flame war!
     script(id="nav-layout", type="text/template")
       .earlier
       ul.nav-spotlight
@@ -58,6 +69,3 @@ html
     script(id="main-layout", type="text/template")
       #display.span6
       #comments.span6
-        .meta
-        .post-comment
-        .comments

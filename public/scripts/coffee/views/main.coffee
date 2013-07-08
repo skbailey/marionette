@@ -1,7 +1,8 @@
 define [
   'marionette',
   'views/display'
-  ], (Marionette, DisplayView) ->
+  'views/comments'
+  ], (Marionette, DisplayView, CommentsView) ->
 
     class MainView extends Marionette.Layout
       template: "#main-layout"
@@ -16,6 +17,7 @@ define [
 
       onRundownSet: (collection) ->
         @display.show new DisplayView model: collection.first()
+        @comments.show new CommentsView
 
       onRundownSelect: (collection, target) ->
         @display.show new DisplayView model: collection.at(target)
